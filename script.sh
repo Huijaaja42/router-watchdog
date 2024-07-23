@@ -5,7 +5,7 @@ read -r c < counter
 i=0
 while [ "$i" -lt 5 ]; do
    if ping -c 1 -w 10 1.1.1.1 > /dev/null 2>&1; then
-      echo "$(date -I'seconds') Internet connection OK"
+      #echo "$(date -I'seconds') Internet connection OK"
       c=0
       echo $c > counter
       exit 0
